@@ -1,4 +1,4 @@
-import { ErrorMapper } from "utils/ErrorMapper";
+import { ErrorMapper } from 'utils/ErrorMapper';
 
 declare global {
   /*
@@ -21,12 +21,16 @@ declare global {
     working: boolean;
   }
 
-  // Syntax for adding proprties to `global` (ex "global.log")
-  namespace NodeJS {
-    interface Global {
-      log: any;
-    }
+  interface Role {
+
   }
+
+  // Syntax for adding proprties to `global` (ex "global.log")
+  // namespace NodeJS {
+  //   interface Global {
+  //     log: any;
+  //   }
+  // }
 }
 
 // When compiling TS to JS and bundling with rollup, the line numbers and file names in error messages change
